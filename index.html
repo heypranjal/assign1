@@ -1,13 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registratiom Form</title>
 </head>
 <body>
+   <div id="container">
     <form action="">
-        
-    </form>
+        <!-- input for name -->
+        <label for="Name">Name</label>
+        <input type="text"  id="Name" placeholder="enter your name" required maxlength="100">
+        <!-- input for email -->
+         <label for="Email">Email:</label>
+         <input onchange="checkemail()" type="text" name="Email" id="Email" placeholder="enter your Email" required maxlength="50">
+        <!-- input for age  -->
+        <label for="dob">Date of Birth:</label> 
+        <input onchange="findage()" type="date" name="dob" id="dob">
+        <!-- i nput for Gender -->
+         <label for="Gender">Gender:</label>
+         <select name="" id="">
+            <option value="">Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Others</option>
+         </select>
+         <!-- Country --><label for="Country">Country</label>
+          <select onchange="selectstates()" name="Country" id="">
+            <option value="Select country">Select Country</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="">China</option>
+            <option value="">Australia</option>
+            <option value="">UK</option>
+          </select>
+         
+          <!-- select state -->
+     <label for="state">Select State:</label>
+    <select onchange="selectCity()" name="state" id="state">
+        <option value=""></option>
+    </select>
+    
+         <!-- select city -->
+         <label for="city">Select City:</label>
+         <select name="city" id="city">
+             <option value=""></option>
+         </select>
+    
+         <!-- Input for address -->
+          <label for="Address">Address</label> 
+          <input type="text" name="" id="" required maxlength="250">
+    
+    <!--button -->
+    <button type="submit">Submit</button>
+        </form>
+   </div>
 </body>
-</html>
+</html>         
