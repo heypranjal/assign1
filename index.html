@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- cdn for Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registratiom Form</title>
 </head>
@@ -19,7 +21,7 @@
          <input onchange="checkemail()" type="text" name="Email" id="Email" placeholder="enter your Email" required maxlength="50">
         <!-- input for age  -->
         <label for="dob">Date of Birth:</label> 
-        <input onchange="findage()" type="date" name="dob" id="dob">
+        <input onchange="findAge()" type="date" name="dob" id="dob">
         <!-- i nput for Gender -->
          <label for="Gender">Gender:</label>
          <select name="" id="">
@@ -58,5 +60,6 @@
     <button type="submit">Submit</button>
         </form>
    </div>
+   <script  src="index.js"></script>
 </body>
 </html>         
